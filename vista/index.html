@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Landing Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="bg-stone-500 text-gray-800">
+        <!-- Header -->
+        <header class="bg-black bg-opacity-40 shadow-lg fixed w-full z-10">
+            <div class="container mx-auto px-4 flex justify-between items-center py-4">
+                <!-- Logo -->
+                <img class="w-[150px] h-[55px] sm:w-[200px] sm:h-[70px]" src="../img/logosinfondo.png" alt="logo">
+                
+                <!-- Hamburger Button -->
+                <button id="menu-toggle" class="sm:hidden text-white">
+                    <!-- Icono de menú hamburguesa -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+        
+                <!-- Navigation for Larger Screens -->
+                <nav class="hidden sm:block">
+                    <ul class="flex space-x-8 pt-6">
+                        <li><a href="index.html" class="text-white hover:text-red-950">Home</a></li>
+                        <li><a href="reservas.html" class="text-white hover:text-red-950">Booking</a></li>
+                        <li><a href="contacto.html" class="text-white hover:text-red-950">Contact</a></li>
+                        <li><a href="#contacto" class="hover:text-red-950 bg-white-800 text-white">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <!-- Navigation for Smaller Screens -->
+            <nav id="mobile-menu" class="hidden sm:hidden absolute top-22 left-0 w-full bg-black bg-opacity-70">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                    <li><a href="index.html" class="text-white hover:text-red-950">Home</a></li>
+                    <li><a href="reservas.html" class="text-white hover:text-red-950">Booking</a></li>
+                    <li><a href="contacto.html" class="text-white hover:text-red-950">Contact</a></li>
+                    <li><a href="#contacto" class="hover:text-red-950 bg-white-800 text-white">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Hero Section (Slider) -->
+        <section id="hero" class="relative h-[700px] sm:h-[75vh] md:h-[60vh] lg:h-[50vh]">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="slider w-full h-full flex transition-transform duration-1000" id="slider">
+                    <!-- Slider Item -->
+                    <div class="flex-none w-full h-full relative">
+                        <img src="../img/01piscinapequeña.jpg" alt="Beach" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 md:p-6 lg:p-8">
+                            <div class="text-center">
+                                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4">
+                                    Your Dream Vacation Awaits
+                                </h2>
+                                <p class="text-sm sm:text-base md:text-lg text-white">
+                                    Unwind in paradise with stunning views and unmatched comfort.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat Slider Items -->
+                    <div class="flex-none w-full h-full relative">
+                        <img src="../img/02casaamarilla.jpg" alt="Luxury Room" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 md:p-6 lg:p-8">
+                            <div class="text-center">
+                                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4">
+                                    Indulge in Luxury
+                                </h2>
+                                <p class="text-sm sm:text-base md:text-lg text-white">
+                                    Experience premium services designed for your relaxation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-none w-full h-full relative">
+                        <img src="../img/03psinagrande.jpg" alt="Luxury Room" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 md:p-6 lg:p-8">
+                            <div class="text-center">
+                                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4">
+                                    Indulge in Luxury
+                                </h2>
+                                <p class="text-sm sm:text-base md:text-lg text-white">
+                                    Experience premium services designed for your relaxation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <button id="prev-slider" class="absolute z-10 top-1/2 left-4 transform -translate-y-1/2 text-white p-2 sm:p-3 bg-black bg-opacity-50 rounded-full">
+                ‹
+            </button>
+            <button id="next-slider" class="absolute z-10 top-1/2 right-4 transform -translate-y-1/2 text-white p-2 sm:p-3 bg-black bg-opacity-50 rounded-full">
+                ›
+            </button>
+        </section>
+        
+        <!-- Rooms Carousel -->
+        <section id="rooms" class="py-10">
+            <div class="carousel-container">
+                <div class="inner-carousel">
+                    <div class="track">
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card1 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105 ">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="Piscina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card2 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card3 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card4 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card5 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card6 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card7 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card8 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card9 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card10 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card11 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            11</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="reservas.html">
+                            <div
+                                class="card-container flex justify-center items-center p-6">
+                                <div
+                                    class="card card12 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm transform transition duration-300 hover:scale-105">
+                                    <div class="card-image">
+                                        <img src="../img/01piscinapequeña.jpg"
+                                            alt="psicina pequeña"
+                                            class="w-full h-48 object-cover">
+                                    </div>
+                                    <div class="card-info p-4">
+                                        <p
+                                            class="text-gray-800 text-lg font-semibold">Información
+                                            12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <button
+                            class="prev text-black">‹</button>
+                        <button
+                            class="next text-black">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hotel Areas -->
+        <section id="areas" class="py-10 bg-gray-200">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-10 text-center">Hotel
+                    Areas</h2>
+
+                <!-- Area 1: Spa -->
+                <div
+                    class="flex flex-col lg:flex-row items-center mb-10 lg:mb-16 bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                    <img src="../img/04spa.jpg" alt="Spa"
+                        class="w-full h-[350px] lg:w-1/2 object-cover">
+                    <div class="p-6 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold mb-4">Spa</h3>
+                        <p class="text-gray-700">Relax and rejuvenate with our
+                            world-class spa treatments. Experience tranquility
+                            and well-being with our professional services
+                            tailored to your needs.</p>
+                    </div>
+                </div>
+
+                <!-- Area 2: Pool -->
+                <div
+                    class="flex flex-col lg:flex-row-reverse items-center mb-10 lg:mb-16 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="../img/03psinagrande.jpg" alt="Pool"
+                        class="w-full h-[350px] lg:w-1/2 object-cover">
+                    <div class="p-6 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold mb-4">Pool</h3>
+                        <p class="text-gray-700">Enjoy our heated pool with
+                            breathtaking views. Perfect for relaxation or a
+                            refreshing swim, all while surrounded by serene
+                            landscapes.</p>
+                    </div>
+                </div>
+
+                <!-- Area 3: Restaurant -->
+                <div
+                    class="flex flex-col lg:flex-row items-center mb-10 lg:mb-16 bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                    <img src="../img/08restaurante.jpg" alt="Restaurant"
+                        class="w-full h-[350px] lg:w-1/2 object-cover">
+                    <div class="p-6 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold mb-4">Restaurant</h3>
+                        <p class="text-gray-700">Indulge in exquisite culinary
+                            delights. Our restaurant offers a unique dining
+                            experience with a menu crafted to excite your taste
+                            buds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-white text-gray-600 py-5">
+            <div class="container mx-auto text-center">
+                <p>Contact us at <a href="mailto:info@hotelparadise.com"
+                        class="text-blue-400">info@hotelparadise.com</a></p>
+                <p>&copy; 2025 Hotel Paradise. All rights reserved.</p>
+            </div>
+        </footer>
+        <a href="https://wa.me/+573125153302" target="_blank"
+            class="fixed bottom-5 left-5 text-white p-3 rounded-full">
+            <img class="w-[50px] h-[50px]" src="../img/whatsapp.png"
+                alt="whatsapp">
+        </a>
+    </body>
+    <script src="../js/app.js"></script>
+
+</html>
