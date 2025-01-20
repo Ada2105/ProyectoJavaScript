@@ -5,31 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservations Page</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="../js/app.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/app.js"></script>
     </head>
     <body class="bg-gray-100 text-gray-800">
         <!-- Header -->
         <header class="bg-black bg-opacity-40 shadow-lg fixed w-full z-10">
-            <div class="container mx-auto px-4 flex justify-between items-center py-4">
-                <img class="w-[200px] h-[70px]" src="../img/logosinfondo.png" alt="logo">
-                <nav>
-                    <ul class="flex space-x-8 ">
-                        <li><a href="index.html"
-                                class="text-white hover:text-red-950">Home</a></li>
-                        <li><a href="reservas.html"
-                                class="text-white hover:text-red-950">Booking</a></li>
-                        <li><a href="contacto.html"
-                                class="text-white hover:text-red-950">Contact</a></li>
-                        <li><a href="#contacto" class="hover:text-red-950 bg-white-800 text-white">Login</a></li>
+            <div class="container mx-auto px-2 sm:px-4 flex justify-between items-center py-4">
+                <!-- Logo -->
+                <img class="w-[150px] h-[55px] sm:w-[200px] sm:h-[70px]" src="../img/logosinfondo.png" alt="logo">
+                
+                <!-- Hamburger Button -->
+                <button id="menu-toggle" class="sm:hidden text-white">
+                    <!-- Icono de menú hamburguesa -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+        
+                <!-- Navigation for Larger Screens -->
+                <nav class="hidden sm:block">
+                    <ul class="flex space-x-8 pt-4">
+                        <li><a href="/index.html" class="text-white hover:text-red-950">Home</a></li>
+                        <li><a href="/vista/reservas.html" class="text-white hover:text-red-950">Booking</a></li>
+                        <li><a href="/vista/contacto.html" class="text-white hover:text-red-950">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+        
+            <!-- Navigation for Smaller Screens -->
+            <nav id="mobile-menu" class="hidden sm:hidden absolute top-22 left-0 w-full bg-black bg-opacity-70">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                    <li><a href="/index.html" class="text-white hover:text-red-950">Home</a></li>
+                    <li><a href="/vista/reservas.html" class="text-white hover:text-red-950">Booking</a></li>
+                    <li><a href="/vista/contacto.html" class="text-white hover:text-red-950">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <!-- Hero Section -->
         <section
-            class="reservas bg-cover bg-center h-[400px] flex items-center justify-center">
+            class="reservas bg-cover bg-center  flex items-center justify-center relative h-[500px] sm:h-[70vh] md:h-[70vh] lg:h-[60vh]">
             <div
                 class="bg-black w-full h-full text-center pt-[200px] bg-opacity-50 p-8 rounded">
                 <h2 class="text-3xl font-bold text-white">Book Your Stay with
@@ -90,11 +106,80 @@
                 </form>
 
                 <!-- Contenedor para los resultados -->
-                <div id="results"
-                    class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                <div id="results" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </div>
+        </section>
+
+     <!-- Modal para iniciar sesión o registrarse -->
+            <div id="auth-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="bg-white rounded shadow-md w-96 p-6">
+                    <!-- Formulario de inicio de sesión -->
+                    <div id="login-section">
+                        <h2 class="text-lg font-bold mb-4">Login to Reserve</h2>
+                        <form id="login-form">
+                            <div class="mb-4">
+                                <label for="login-email" class="block text-sm font-medium mb-2">Email:</label>
+                                <input
+                                    type="email"
+                                    id="login-email"
+                                    class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <label for="login-password" class="block text-sm font-medium mb-2">Password:</label>
+                                <input
+                                    type="password"
+                                    id="login-password"
+                                    class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                                    required
+                                />
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <button type="button" id="switch-to-register" class="text-blue-500 text-sm">Create an account</button>
+                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Formulario de registro -->
+                    <div id="register-section" class="hidden">
+                        <h2 class="text-lg font-bold mb-4">Register</h2>
+                        <form id="register-form">
+                            <div class="mb-4">
+                                <label for="register-email" class="block text-sm font-medium mb-2">Email:</label>
+                                <input
+                                    type="email"
+                                    id="register-email"
+                                    class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <label for="register-password" class="block text-sm font-medium mb-2">Password:</label>
+                                <input
+                                    type="password"
+                                    id="register-password"
+                                    class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"
+                                    required
+                                />
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <button type="button" id="switch-to-login" class="text-blue-500 text-sm">Already have an account?</button>
+                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
 
-        </section>
+
+
+  
+
+
+
+
 
         <!-- Footer -->
         <footer id="contact" class="bg-white text-gray-600 py-5">

@@ -1,7 +1,11 @@
 {
+  "users": [],
+  "sessions": {
+    "currentUserId": null
+  },
   "rooms": [
     {
-      "id": 101,
+      "id": "101",
       "description": "The cottages are the ultimate expression of luxury and elegance.",
       "guests": "2 guests",
       "surface": "200 m2",
@@ -12,19 +16,10 @@
       "Minibar": true,
       "price": 50,
       "available": true,
-      "reservations": [
-        {
-          "checkIn": "2025-01-10",
-          "checkOut": "2025-01-15"
-        },
-        {
-          "checkIn": "2025-02-01",
-          "checkOut": "2025-02-05"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 102,
+      "id": "102",
       "description": "Double cottages offer a spacious and comfortable design to share with family or friends, surrounded by the serenity of the jungle.",
       "guests": "4 guests",
       "surface": "200 m2",
@@ -38,7 +33,7 @@
       "reservations": []
     },
     {
-      "id": 103,
+      "id": "103",
       "description": "The Family Villa offers the perfect retreat for groups or families, with two bedrooms and spaces designed for absolute comfort.",
       "guests": "6 guests",
       "surface": "380 m2",
@@ -49,15 +44,10 @@
       "Minibar": true,
       "price": 170,
       "available": true,
-      "reservations": [
-        {
-          "checkIn": "2025-03-01",
-          "checkOut": "2025-03-05"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 104,
+      "id": "104",
       "description": "The Presidential Villa combines luxury, spaciousness, and privacy in an environment designed for rest and connection with nature.",
       "guests": "8 guests",
       "surface": "745 m2",
@@ -71,7 +61,7 @@
       "reservations": []
     },
     {
-      "id": 105,
+      "id": "105",
       "description": "The Royal Villa redefines the luxury experience, combining colonial and modern design in vast and tranquil spaces.",
       "guests": "8 guests",
       "surface": "930 m2",
@@ -82,15 +72,10 @@
       "Minibar": true,
       "price": 390,
       "available": true,
-      "reservations": [
-        {
-          "checkIn": "2025-01-20",
-          "checkOut": "2025-01-25"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 106,
+      "id": "106",
       "description": "The cottages are the ultimate expression of luxury and elegance.",
       "guests": "2 guests",
       "surface": "200 m2",
@@ -101,19 +86,10 @@
       "Minibar": true,
       "price": 50,
       "available": true,
-      "reservations": [
-        {
-          "checkIn": "2025-01-12",
-          "checkOut": "2025-01-14"
-        },
-        {
-          "checkIn": "2025-01-28",
-          "checkOut": "2025-01-30"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 107,
+      "id": "107",
       "description": "Double cottages offer a spacious and comfortable design to share with family or friends, surrounded by the serenity of the jungle.",
       "guests": "4 guests",
       "surface": "200 m2",
@@ -124,19 +100,10 @@
       "Minibar": true,
       "price": 80,
       "available": false,
-      "reservations": [
-        {
-          "checkIn": "2025-02-10",
-          "checkOut": "2025-02-15"
-        },
-        {
-          "checkIn": "2025-03-05",
-          "checkOut": "2025-03-10"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 108,
+      "id": "108",
       "description": "The Family Villa offers the perfect retreat for groups or families, with two bedrooms and spaces designed for absolute comfort.",
       "guests": "6 guests",
       "surface": "380 m2",
@@ -147,15 +114,10 @@
       "Minibar": true,
       "price": 170,
       "available": true,
-      "reservations": [
-        {
-          "checkIn": "2025-04-01",
-          "checkOut": "2025-04-07"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 109,
+      "id": "109",
       "description": "The Presidential Villa combines luxury, spaciousness, and privacy in an environment designed for rest and connection with nature.",
       "guests": "8 guests",
       "surface": "745 m2",
@@ -166,15 +128,10 @@
       "Minibar": true,
       "price": 280,
       "available": true,
-      "reservations": [
-        {
-          "checkIn": "2025-01-18",
-          "checkOut": "2025-01-22"
-        }
-      ]
+      "reservations": []
     },
     {
-      "id": 110,
+      "id": "110",
       "description": "The Royal Villa redefines the luxury experience, combining colonial and modern design in vast and tranquil spaces.",
       "guests": "8 guests",
       "surface": "930 m2",
@@ -185,16 +142,289 @@
       "Minibar": true,
       "price": 390,
       "available": false,
-      "reservations": [
-        {
-          "checkIn": "2025-02-20",
-          "checkOut": "2025-02-25"
-        },
-        {
-          "checkIn": "2025-03-15",
-          "checkOut": "2025-03-20"
-        }
-      ]
+      "reservations": []
+    },
+    {
+      "id": "111",
+      "description": "The cottages are the ultimate expression of luxury and elegance. The contemporary architecture opens the way to the stunning nature for you to inhabit and be inhabited by its mystical beauty.",
+      "guests": "2 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "1 king-size bed",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 50,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "112",
+      "description": "Double cottages offer a spacious and comfortable design to share with family or friends, surrounded by the serenity of the jungle.",
+      "guests": "4 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 80,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "113",
+      "description": "The Family Villa offers the perfect retreat for groups or families, with two bedrooms and spaces designed for absolute comfort.",
+      "guests": "6 guests",
+      "surface": "380 m2",
+      "piscina": "private outdoor (50m2 / 538 ft2)",
+      "bed": "1 king-size bed and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 170,
+      "available": false,
+      "reservations": []
+    },
+    {
+      "id": "114",
+      "description": "The Presidential Villa combines luxury, spaciousness, and privacy in an environment designed for rest and connection with nature.",
+      "guests": "8 guests",
+      "surface": "745 m2",
+      "piscina": "private outdoor (70m2 / 753 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 280,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "115",
+      "description": "The Royal Villa redefines the luxury experience, combining colonial and modern design in vast and tranquil spaces.",
+      "guests": "8 guests",
+      "surface": "930 m2",
+      "piscina": "private outdoor (100m2 / 1076 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 390,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "116",
+      "description": "The cottages are the ultimate expression of luxury and elegance. The contemporary architecture opens the way to the stunning nature for you to inhabit and be inhabited by its mystical beauty.",
+      "guests": "2 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "1 king-size bed",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 50,
+      "available": false,
+      "reservations": []
+    },
+    {
+      "id": "117",
+      "description": "Double cottages offer a spacious and comfortable design to share with family or friends, surrounded by the serenity of the jungle.",
+      "guests": "4 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 80,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "118",
+      "description": "The Family Villa offers the perfect retreat for groups or families, with two bedrooms and spaces designed for absolute comfort.",
+      "guests": "6 guests",
+      "surface": "380 m2",
+      "piscina": "private outdoor (50m2 / 538 ft2)",
+      "bed": "1 king-size bed and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 170,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "119",
+      "description": "The Presidential Villa combines luxury, spaciousness, and privacy in an environment designed for rest and connection with nature.",
+      "guests": "8 guests",
+      "surface": "745 m2",
+      "piscina": "private outdoor (70m2 / 753 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 280,
+      "available": false,
+      "reservations": []
+    },
+    {
+      "id": "120",
+      "description": "The Royal Villa redefines the luxury experience, combining colonial and modern design in vast and tranquil spaces.",
+      "guests": "8 guests",
+      "surface": "930 m2",
+      "piscina": "private outdoor (100m2 / 1076 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 390,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "121",
+      "description": "The cottages are the ultimate expression of luxury and elegance. The contemporary architecture opens the way to the stunning nature for you to inhabit and be inhabited by its mystical beauty.",
+      "guests": "2 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "1 king-size bed",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 50,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "122",
+      "description": "Double cottages offer a spacious and comfortable design to share with family or friends, surrounded by the serenity of the jungle.",
+      "guests": "4 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 80,
+      "available": false,
+      "reservations": []
+    },
+    {
+      "id": "123",
+      "description": "The Family Villa offers the perfect retreat for groups or families, with two bedrooms and spaces designed for absolute comfort.",
+      "guests": "6 guests",
+      "surface": "380 m2",
+      "piscina": "private outdoor (50m2 / 538 ft2)",
+      "bed": "1 king-size bed and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 170,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "124",
+      "description": "The Presidential Villa combines luxury, spaciousness, and privacy in an environment designed for rest and connection with nature.",
+      "guests": "8 guests",
+      "surface": "745 m2",
+      "piscina": "private outdoor (70m2 / 753 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 280,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "125",
+      "description": "The Royal Villa redefines the luxury experience, combining colonial and modern design in vast and tranquil spaces.",
+      "guests": "8 guests",
+      "surface": "930 m2",
+      "piscina": "private outdoor (100m2 / 1076 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 390,
+      "available": false,
+      "reservations": []
+    },
+    {
+      "id": "126",
+      "description": "The cottages are the ultimate expression of luxury and elegance. The contemporary architecture opens the way to the stunning nature for you to inhabit and be inhabited by its mystical beauty.",
+      "guests": "2 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "1 king-size bed",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 50,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "127",
+      "description": "Double cottages offer a spacious and comfortable design to share with family or friends, surrounded by the serenity of the jungle.",
+      "guests": "4 guests",
+      "surface": "200 m2",
+      "piscina": "private outdoor (35m2 / 377 ft2)",
+      "bed": "2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 80,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "128",
+      "description": "The Family Villa offers the perfect retreat for groups or families, with two bedrooms and spaces designed for absolute comfort.",
+      "guests": "6 guests",
+      "surface": "380 m2",
+      "piscina": "private outdoor (50m2 / 538 ft2)",
+      "bed": "1 king-size bed and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 170,
+      "available": false,
+      "reservations": []
+    },
+    {
+      "id": "129",
+      "description": "The Presidential Villa combines luxury, spaciousness, and privacy in an environment designed for rest and connection with nature.",
+      "guests": "8 guests",
+      "surface": "745 m2",
+      "piscina": "private outdoor (70m2 / 753 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 280,
+      "available": true,
+      "reservations": []
+    },
+    {
+      "id": "130",
+      "description": "The Royal Villa redefines the luxury experience, combining colonial and modern design in vast and tranquil spaces.",
+      "guests": "8 guests",
+      "surface": "930 m2",
+      "piscina": "private outdoor (100m2 / 1076 ft2)",
+      "bed": "2 king-size beds and 2 queen-size beds",
+      "Terrace": true,
+      "Internet access": true,
+      "Minibar": true,
+      "price": 390,
+      "available": true,
+      "reservations": []
     }
+  ],
+  "reservations": [
   ]
 }

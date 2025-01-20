@@ -3,20 +3,19 @@
     margin: 0;
     padding: 0;
 }
-
-
+body, html {
+    overflow-x: hidden;
+}
 #slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
     /* Opcional si necesitas ajustar */
 }
-
 .slider>div {
     flex: 0 0 100%;
     /* Cada slide ocupa el 100% del ancho del contenedor */
 }
-
 /* Asegura que el contenido del slider esté por encima */
 .text-center {
     position: relative;
@@ -24,43 +23,8 @@
     /* Coloca el texto encima del pseudo-elemento oscuro */
 }
 
-.carousel-container {
-    width: 1100px;
-    margin: 50px auto;
-    position: relative;
-}
-
-
-
-@media (max-width: 768px) {
-    .carousel-container {
-        width: 95%;
-    }
-}
-
-.inner-carousel {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.track {
-    display: inline-flex;
-    height: 100%;
-    transition: transform 0.2s ease-in-out;
-}
-
-.card-container {
-    width: 275px;
-    height: auto;
-    flex-shrink: 0;
-    padding-right: 10px;
-}
-
-@media (max-width: 768px) {
-    .card-container {
-        width: 184px;
-    }
+.container {
+    max-width: 100%;
 }
 
 .card {
@@ -72,39 +36,25 @@
     border-radius: 10px;
 }
 
-
-.nav button {
-    position: absolute;
-    top: 45%;
-    transform: translatey(-50%);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.nav .prev {
-    left: -70px;
-    display: none;
-}
-
 .nav .prev.show {
     display: block;
-}
-
-.nav .next {
-    right: -60px;
 }
 
 .nav .next.hide {
     display: none;
 }
-
 .reservas {
     background-image: url(../img/18zonasverdes.jpg);
     background-size: cover;
     background-position: center;
 }
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+

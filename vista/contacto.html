@@ -5,25 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body class="bg-gray-100 text-gray-800">
         <!-- Header -->
         <header class="bg-black bg-opacity-40 shadow-lg fixed w-full z-10">
-            <div class="container mx-auto px-4 flex justify-between items-center py-4">
-                <img class="w-[200px] h-[70px]" src="../img/logosinfondo.png" alt="logo">
-                <nav>
-                    <ul class="flex space-x-8 ">
-                        <li><a href="index.html"
-                                class="text-white hover:text-red-950">Home</a></li>
-                        <li><a href="reservas.html"
-                                class="text-white hover:text-red-950">Booking</a></li>
-                        <li><a href="contacto.html"
-                                class="text-white hover:text-red-950">Contact</a></li>
-                        <li><a href="#contacto" class="hover:text-red-950 bg-white-800 text-white">Login</a></li>
+            <div class="container mx-auto px-2 sm:px-4 flex justify-between items-center py-4">
+                <!-- Logo -->
+                <img class="w-[150px] h-[55px] sm:w-[200px] sm:h-[70px]" src="../img/logosinfondo.png" alt="logo">
+                
+                <!-- Hamburger Button -->
+                <button id="menu-toggle" class="sm:hidden text-white">
+                    <!-- Icono de menú hamburguesa -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+        
+                <!-- Navigation for Larger Screens -->
+                <nav class="hidden sm:block">
+                    <ul class="flex space-x-8 pt-4">
+                        <li><a href="/index.html" class="text-white hover:text-red-950">Home</a></li>
+                        <li><a href="/vista/reservas.html" class="text-white hover:text-red-950">Booking</a></li>
+                        <li><a href="/vista/contacto.html" class="text-white hover:text-red-950">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+        
+            <!-- Navigation for Smaller Screens -->
+            <nav id="mobile-menu" class="hidden sm:hidden absolute top-22 left-0 w-full bg-black bg-opacity-70">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                    <li><a href="/index.html" class="text-white hover:text-red-950">Home</a></li>
+                    <li><a href="/vista/reservas.html" class="text-white hover:text-red-950">Booking</a></li>
+                    <li><a href="/vista/contacto.html" class="text-white hover:text-red-950">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <!-- Hero Section -->
